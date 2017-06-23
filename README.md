@@ -5,7 +5,7 @@
 - สิ้นสุด ...
 
 ### Setup Tool & Environment
-- ติดตั้ง Ubuntu 16.04.2 LTS และ Dev tool อื่นๆ เช่น chrome ฯ
+- ติดตั้ง Ubuntu 16.04.2 LTS และ Dev tool อื่นๆ เช่น chrome, extension tool ฯ
 - ติดตั้ง Nodejs v.8.1.2
 - ติดตั้ง VS Code & Setup extension 
 - ติดตั้ง yarn & vue-cli
@@ -30,7 +30,7 @@
 
 ```
 
-pages คือ ไฟล์สำหรับเรียกใช้ containers หรือ components เพื่อแสดงผลทางเว็บเพจ มีทั้งหมดดังนี้
+#### ขั้นตอนที่ 1 สร้าง pages & routing
 - Home
 - Signup
 - Login
