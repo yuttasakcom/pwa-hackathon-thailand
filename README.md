@@ -19,14 +19,14 @@
 
 ### Design และ ออกแบบโครงสร้างเว็บ โดยจะมีโครงสร้างหลักๆประมาณนี้
 ```
-src
-|
-└───pages
-└───containers
-└───components
-└───services
-└───stores
-└───router
+.
++-- pages
++-- containers
++-- components
++-- services
++-- stores
++-- router
+
 ```
 
 pages คือ ไฟล์สำหรับเรียกใช้ containers หรือ components เพื่อแสดงผลทางเว็บเพจ มีทั้งหมดดังนี้
