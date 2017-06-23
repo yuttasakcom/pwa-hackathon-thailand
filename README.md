@@ -20,12 +20,13 @@
 ### Design และ ออกแบบโครงสร้างเว็บ โดยจะมีโครงสร้างหลักๆประมาณนี้
 ```
 .
-+-- pages
-+-- containers
-+-- components
-+-- services
-+-- stores
-+-- router
++-- src
+    +-- pages
+    +-- containers
+    +-- components
+    +-- services
+    +-- stores
+    +-- router
 
 ```
 
