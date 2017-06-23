@@ -11,9 +11,9 @@
 - ติดตั้ง yarn & vue-cli
 
 #### เริ่มสร้าง project 
-##### ชื่อโปรเจ็กต์ : PWA Game Turnbased On/Off Line
-- ติดตั้ง vue pwa และ install package
-- Design และ ออกแบบโครงสร้างเว็บ โดยจะมีหน้าเว็บเพจทั้งหมดดังนี้
+  ชื่อโปรเจ็กต์ : PWA Game Turnbased On/Off Line
+    - ติดตั้ง vue pwa และ install package
+    - Design และ ออกแบบโครงสร้างเว็บ โดยจะมีหน้าเว็บเพจทั้งหมดดังนี้
 
 ###### Pages
 - Home
