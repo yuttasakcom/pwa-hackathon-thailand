@@ -12,10 +12,13 @@
 
 ### เริ่มสร้าง project
 #### ชื่อโปรเจ็กต์ : PWA Game Turnbased On/Off Line
-- ติดตั้ง vue pwa และ install package
-- Design และ ออกแบบโครงสร้างเว็บ โดยจะมีหน้าเว็บเพจทั้งหมดดังนี้
+- ติดตั้ง vue pwa และ install package เพิ่มดังนี้
+  - bootstrap version 4.0.0-alpha.6
+  - vuex
+  - ... เดี๋ยวมาเพิ่มต่อ
 
-#### Pages
+### Design และ ออกแบบโครงสร้างเว็บ โดยจะมีโครงสร้างหลักๆประมาณนี้
+#### pages => หน้าแสดงผลทางเว็บเพจ
 - Home
 - Signup
 - Login
