@@ -2,7 +2,7 @@
   <div class="container">
     <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-sm">
 
-      <h1 class="navbar-brand text-center text-md-left text-primary" @click="goHome">YoYea</h1>
+      <h1 class="navbar-brand text-center text-md-left text-primary" @click="goHome">YOYEA</h1>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <div>
