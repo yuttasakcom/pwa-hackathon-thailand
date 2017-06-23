@@ -14,8 +14,8 @@
 #### ชื่อโปรเจ็กต์ : PWA Game Turnbased On/Off Line
 - ติดตั้ง vue pwa และ install package เพิ่มดังนี้
   - bootstrap version 4.0.0-alpha.6
-  - vuex
-  - firebase
+  - vuex v.2.3.1
+  - firebase v.4.1.3
   - ... เดี๋ยวมาเพิ่มต่อ
 
 ### Design และ ออกแบบโครงสร้างเว็บ โดยจะมีโครงสร้างหลักๆประมาณนี้
