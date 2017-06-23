@@ -15,6 +15,7 @@
 - ติดตั้ง vue pwa และ install package เพิ่มดังนี้
   - bootstrap version 4.0.0-alpha.6
   - vuex
+  - firebase
   - ... เดี๋ยวมาเพิ่มต่อ
 
 ### Design และ ออกแบบโครงสร้างเว็บ โดยจะมีโครงสร้างหลักๆประมาณนี้
@@ -42,3 +43,18 @@
 - Loser
 - ManageItem
 - Ranking
+
+#### ขั้นตอนที่ 2 สร้าง containers สำหรับ group component ไว้ใช้งาน
+- Navbar
+- Login
+- Footer
+
+#### ขั้นตอนที่ 3 สร้าง components
+- LoginButton
+- Sprite
+
+#### ขึ้นตอนที่ 4 สร้าง services เชื่อมต่อ firebase
+- Authen
+
+#### ขั้นตอนที่ 5 สร้าง stores
+- User
