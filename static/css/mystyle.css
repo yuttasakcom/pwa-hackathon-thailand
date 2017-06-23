@@ -1,0 +1,27 @@
+body {
+  background-color: #1a1b1d;
+  color: #fff;
+}
+h1 {
+  font-weight: bold;
+  font-size: 3.5em;
+}
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+#app {
+  background: url("/static/img/background/bg.jpg") no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+@media (min-width: 992px) {
+.pt-lg-6 {
+  padding-top: 6rem !important; }
+.pb-lg-6 {
+  padding-bottom: 12rem !important; }
+}
