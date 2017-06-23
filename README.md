@@ -34,7 +34,7 @@
 #### ขั้นตอนที่ 1 สร้าง pages & routing
 - Home
 - Signup
-- Login
+- Signin
 - ChooseCharacter
 - ChooseMap
 - ChooseMonster

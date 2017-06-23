@@ -25,3 +25,14 @@ textarea {
 .pb-lg-6 {
   padding-bottom: 12rem !important; }
 }
+
+.btn-outline-success {
+    color: #fff;
+    border-color: #00ffc4;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #00ffc4;
+    border-color: #00ffc4;
+}

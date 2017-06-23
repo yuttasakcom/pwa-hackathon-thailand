@@ -3,7 +3,7 @@ import Router from 'vue-router'
 
 import Home from '@/pages/Home'
 import Signup from '@/pages/Signup'
-import Login from '@/pages/Login'
+import Signin from '@/pages/Signin'
 import ChooseCharacter from '@/pages/ChooseCharacter'
 import ChooseMap from '@/pages/ChooseMap'
 import ChooseMonster from '@/pages/ChooseMonster'
@@ -19,7 +19,7 @@ export default new Router({
   routes: [
     {path: '/', name: 'Home', component: Home},
     {path: '/signup', name: 'Signup', component: Signup},
-    {path: '/login', name: 'Login', component: Login},
+    {path: '/Signin', name: 'Signin', component: Signin},
     {path: '/choose/character', name: 'ChooseCharacter', component: ChooseCharacter},
     {path: '/choose/map', name: 'ChooseMap', component: ChooseMap},
     {path: '/choose/monster', name: 'ChooseMonster', component: ChooseMonster},

@@ -2,11 +2,11 @@
   <div class="container">
     <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-sm">
 
-      <h1 class="navbar-brand text-center text-md-left text-primary" @click="goHome">YOYEA</h1>
+      <h1 class="navbar-brand text-center text-md-left text-primary" @click="goHome">PWA TURN BASED</h1>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <div>
-          <router-link to="/login" tag="button" class="btn btn-outline-warning pull-right">Sign In</router-link>
+          <router-link to="/signin" tag="button" class="btn btn-outline-warning pull-right">Sign In</router-link>
           <router-link to="/signup" tag="button" class="btn btn-outline-success pull-right">Sign Up</router-link>
         </div>
       </div>
