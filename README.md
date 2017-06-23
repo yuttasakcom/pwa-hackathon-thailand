@@ -19,10 +19,15 @@
 
 ### Design และ ออกแบบโครงสร้างเว็บ โดยจะมีโครงสร้างหลักๆประมาณนี้
 |_ pages
+
 |_ containers
+
 |_ components
+
 |_ services
+
 |_ stores
+
 |_ router
 
 pages คือ ไฟล์สำหรับเรียกใช้ containers หรือ components เพื่อแสดงผลทางเว็บเพจ มีทั้งหมดดังนี้
