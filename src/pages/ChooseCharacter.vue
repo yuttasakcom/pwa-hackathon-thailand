@@ -1,6 +1,6 @@
 <template>
   <div class="contianer">
-    <div class="mt-5 text-center">
+    <div class="pt-lg-30 text-center">
       กำลังพัฒนา...
     </div>
   </div>
@@ -10,7 +10,7 @@
   export default {
     created () {
       this.$store.dispatch('setCss', {
-        bg: "background: url('/static/img/background/bg_choose_charecter.jpg') center center / cover no-repeat fixed;"
+        bg: "background: url('/static/img/background/bg_green1.jpg') center center / cover no-repeat fixed;"
       })
     }
   }
