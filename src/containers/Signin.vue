@@ -1,7 +1,6 @@
 <template>
   <div>
     <SigninButton :login="github"></SigninButton>
-    <SigninButton :login="twitter"></SigninButton>
     <SigninButton :login="facebook"></SigninButton>
     <SigninButton :login="google"></SigninButton>
   </div>
