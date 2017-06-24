@@ -35,7 +35,7 @@
 #### สร้าง pages & routing
 - [x] Home
 - [ ] Signup
-- [ ] Signin
+- [x] Signin
 - [ ] ChooseCharacter
 - [ ] ChooseMap
 - [ ] ChooseMonster
@@ -49,6 +49,7 @@
 - [x] Navbar
 - [ ] Login
 - [x] Footer
+- [x] Signin
 
 #### สร้าง components
 - [ ] LoginButton
@@ -56,6 +57,7 @@
 
 #### สร้าง services เชื่อมต่อ firebase
 - [x] ติดตั้ง firebase tool `npm install -g firebase-tools` & `firebase init`
+- [x] Auth service
 
 #### สร้าง stores
 - [ ] User
