@@ -16,7 +16,7 @@
   - bootstrap version 4.0.0-alpha.6
   - vuex v.2.3.1
   - firebase v.4.1.3
-  - ... เดี๋ยวมาเพิ่มต่อ
+  - ... เพิ่มทีหลัง
 
 ### Design และ ออกแบบโครงสร้างเว็บ โดยจะมีโครงสร้างหลักๆประมาณนี้
 ```
@@ -28,33 +28,36 @@
     +-- services
     +-- stores
     +-- router
-
+    ... เพิ่มทีหลัง
 ```
 
-#### ขั้นตอนที่ 1 สร้าง pages & routing
-- Home
-- Signup
-- Signin
-- ChooseCharacter
-- ChooseMap
-- ChooseMonster
-- Fighting
-- Winner
-- Loser
-- ManageItem
-- Ranking
+### Check list
+#### สร้าง pages & routing
+- [x]Home
+- []Signup
+- []Signin
+- []ChooseCharacter
+- []ChooseMap
+- []ChooseMonster
+- []Fighting
+- []Winner
+- []Loser
+- []ManageItem
+- []Ranking
 
 #### ขั้นตอนที่ 2 สร้าง containers สำหรับ group component ไว้ใช้งาน
-- Navbar
-- Login
-- Footer
+- [x]Navbar
+- []Login
+- []Footer
 
 #### ขั้นตอนที่ 3 สร้าง components
-- LoginButton
-- Sprite
+- []LoginButton
+- []Sprite
 
 #### ขึ้นตอนที่ 4 สร้าง services เชื่อมต่อ firebase
-- ติดตั้ง firebase tool `npm install -g firebase-tools` & `firebase init`
+- [x]ติดตั้ง firebase tool `npm install -g firebase-tools` & `firebase init`
 
 #### ขั้นตอนที่ 5 สร้าง stores
-- User
+- []User
+
+... เพิ่มทีหลังคิดไม่ทัน T_T
