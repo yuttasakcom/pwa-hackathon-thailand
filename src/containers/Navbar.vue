@@ -6,8 +6,8 @@
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <div>
-          <router-link to="/signup" tag="button" class="btn btn-outline-success pull-lg-right">Sign Up</router-link>
-          <router-link to="/signin" tag="button" class="btn btn-outline-warning pull-lg-right">Sign In</router-link>
+          <router-link to="/signup" tag="button" class="btn btn-outline-success pull-lg-right" active-class="active">Sign Up</router-link>
+          <router-link to="/signin" tag="button" class="btn btn-outline-warning pull-lg-right" active-class="active">Sign In</router-link>
         </div>
       </div>
 
