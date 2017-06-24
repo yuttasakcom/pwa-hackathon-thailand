@@ -54,7 +54,7 @@
 - Sprite
 
 #### ขึ้นตอนที่ 4 สร้าง services เชื่อมต่อ firebase
-- Authen
+- ติดตั้ง firebase tool `npm install -g firebase-tools` & `firebase init`
 
 #### ขั้นตอนที่ 5 สร้าง stores
 - User
