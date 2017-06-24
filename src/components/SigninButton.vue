@@ -11,6 +11,10 @@
     methods: {
       signIn () {
         SIGNIN(this.login.btnProvider).then(res => {
+          let user = {
+            email: res.email
+          }
+          this.$store.dispatch('setUser', user)
           this.$router.replace('/choose/character')
         })
       }

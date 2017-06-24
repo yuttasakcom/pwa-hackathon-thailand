@@ -53,6 +53,10 @@
     methods: {
       submited () {
         firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(res => {
+          res.getIdToken().then(token => {
+            console.log(token)
+          })
+
           let user = {
             email: res.email
           }

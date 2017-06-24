@@ -41,6 +41,10 @@
     methods: {
       signIn (btnProvider) {
         SIGNIN(btnProvider).then(res => {
+          let user = {
+            email: res.email
+          }
+          this.$store.dispatch('setUser', user)
           this.$router.replace('/choose/character')
         })
       }
