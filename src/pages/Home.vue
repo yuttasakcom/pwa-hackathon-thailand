@@ -13,17 +13,17 @@
           </div>
 
           <div class="col-lg-6 text-center">
-            <button type="button" class="btn btn-outline-secondary"><i class="fa fa-github" aria-hidden="true"></i>Sign in with Github</button>
+            <button type="button" class="btn btn-outline-secondary" @click="signIn('github')"><i class="fa fa-github" aria-hidden="true"></i>Sign in with Github</button>
           </div>
         </div>
         <div class="row">
 
           <div class="col-lg-6 text-center">
-            <button type="button" class="btn btn-outline-primary"><i class="fa fa-facebook-official" aria-hidden="true"></i>Sign in with Facebook</button>
+            <button type="button" class="btn btn-outline-primary" @click="signIn('facebook')"><i class="fa fa-facebook-official" aria-hidden="true"></i>Sign in with Facebook</button>
           </div>
 
           <div class="col-lg-6 text-center">
-            <button type="button" class="btn btn-outline-danger"><i class="fa fa-google" aria-hidden="true"></i>Sign in with Google</button>
+            <button type="button" class="btn btn-outline-danger" @click="signIn('google')"><i class="fa fa-google" aria-hidden="true"></i>Sign in with Google</button>
           </div>
         </div>
 
@@ -34,6 +34,19 @@
     </div>
   </div>
 </template>
+
+<script>
+  import { SIGNIN } from '@/services/Auth'
+  export default {
+    methods: {
+      signIn (btnProvider) {
+        SIGNIN(btnProvider).then(res => {
+          this.$router.replace('/choose/character')
+        })
+      }
+    }
+  }
+</script>
 
 <style scoped>
 .hero-img {
