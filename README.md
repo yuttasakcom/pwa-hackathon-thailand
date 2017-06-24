@@ -45,19 +45,19 @@
 - [ ] ManageItem
 - [ ] Ranking
 
-#### ขั้นตอนที่ 2 สร้าง containers สำหรับ group component ไว้ใช้งาน
+#### สร้าง containers สำหรับ group component ไว้ใช้งาน
 - [x] Navbar
 - [ ] Login
 - [ ] Footer
 
-#### ขั้นตอนที่ 3 สร้าง components
+#### สร้าง components
 - [ ] LoginButton
 - [ ] Sprite
 
-#### ขึ้นตอนที่ 4 สร้าง services เชื่อมต่อ firebase
+#### สร้าง services เชื่อมต่อ firebase
 - [x] ติดตั้ง firebase tool `npm install -g firebase-tools` & `firebase init`
 
-#### ขั้นตอนที่ 5 สร้าง stores
+#### สร้าง stores
 - [ ] User
 
 ... เพิ่มทีหลังคิดไม่ทัน T_T
