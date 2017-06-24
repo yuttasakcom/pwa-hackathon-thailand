@@ -36,6 +36,7 @@
       },
       signOut () {
         SIGNOUT().then(res => {
+          this.$cookie.delete('access_token')
           this.$store.dispatch('setUser', null)
           this.$router.push('/')
         })
