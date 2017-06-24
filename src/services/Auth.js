@@ -14,7 +14,17 @@ export const SIGNIN = (btnProvider) => {
       return
   }
 }
-
-export const SIGNOUT = () => {
-  return firebase.auth().signOut()
+export const USERONSTATE = () => {
+  return new Promise((resolve, reject) => {
+    const unsubscribe = firebase.auth().onAuthStateChanged(user => {
+      unsubscribe()
+      if (user) {
+        resolve(user)
+        return
+      }
+      reject(null)
+    })
+  })
 }
+export const GETCURRENTUSER = () => firebase.auth().currentUser
+export const SIGNOUT = () => firebase.auth().signOut()

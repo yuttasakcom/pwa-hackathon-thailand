@@ -41,6 +41,16 @@
   import firebase from 'firebase'
   import Signin from '@/containers/Signin'
   export default {
+    beforeRouteEnter (to, from, next) {
+      const unsubscribe = firebase.auth().onAuthStateChanged(user => {
+        unsubscribe()
+        if (user) {
+          next('/')
+          return
+        }
+        next()
+      })
+    },
     data: () => ({
       email: '',
       password: '',
@@ -53,14 +63,6 @@
     methods: {
       submited () {
         firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(res => {
-          res.getIdToken().then(token => {
-            this.$cookie.set('access_token', token, {expires: 7})
-          })
-
-          let user = {
-            email: res.email
-          }
-          this.$store.dispatch('setUser', user)
           this.$router.replace('/choose/character')
         }).catch(e => {
           this.loginStatus = true

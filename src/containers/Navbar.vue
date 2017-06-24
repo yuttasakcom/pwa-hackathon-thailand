@@ -5,7 +5,7 @@
       <h1 class="navbar-brand text-center text-md-left text-primary ml-3" @click="goHome">PWA TURN BASED</h1>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-        <div v-if="getUser === null">
+        <div v-if="currentUser === null">
           <router-link to="/signup" tag="button" class="btn btn-outline-success pull-lg-right" active-class="active">Sign Up</router-link>
           <router-link to="/signin" tag="button" class="btn btn-outline-warning pull-lg-right" active-class="active">Sign In</router-link>
         </div>
@@ -22,13 +22,16 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
   import { SIGNOUT } from '@/services/Auth'
+  import firebase from 'firebase'
   export default {
-    computed: {
-      ...mapGetters([
-        'getUser'
-      ])
+    data: () => ({
+      currentUser: null
+    }),
+    created () {
+      firebase.auth().onAuthStateChanged(user => {
+        this.currentUser = user
+      })
     },
     methods: {
       goHome () {
@@ -36,8 +39,7 @@
       },
       signOut () {
         SIGNOUT().then(res => {
-          this.$cookie.delete('access_token')
-          this.$store.dispatch('setUser', null)
+          this.currentUser = null
           this.$router.push('/')
         })
       }

@@ -41,6 +41,16 @@
   import firebase from 'firebase'
   import Signin from '@/containers/Signin'
   export default {
+    beforeRouteEnter (to, from, next) {
+      const unsubscribe = firebase.auth().onAuthStateChanged(user => {
+        unsubscribe()
+        if (user) {
+          next('/')
+          return
+        }
+        next()
+      })
+    },
     data: () => ({
       email: '',
       password: '',
