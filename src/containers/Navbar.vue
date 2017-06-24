@@ -9,6 +9,9 @@
           <router-link to="/signup" tag="button" class="btn btn-outline-success pull-lg-right" active-class="active">Sign Up</router-link>
           <router-link to="/signin" tag="button" class="btn btn-outline-warning pull-lg-right" active-class="active">Sign In</router-link>
         </div>
+        <div>
+          <button class="btn btn-outline-danger pull-lg-right" @click="signOut">Sign Out</button>
+        </div>
       </div>
 
       <div class="navbar-toggler navbar-toggler-left mt-1" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,10 +22,25 @@
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+  import { SIGNOUT } from '@/services/Auth'
   export default {
+    created () {
+      console.log(this.getUser)
+    },
+    computed: {
+      ...mapGetters([
+        'getUser'
+      ])
+    },
     methods: {
       goHome () {
         this.$router.push('/')
+      },
+      signOut () {
+        SIGNOUT().then(res => {
+          this.$router.push('/')
+        })
       }
     }
   }

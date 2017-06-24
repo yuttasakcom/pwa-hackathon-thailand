@@ -14,3 +14,7 @@ export const SIGNIN = (btnProvider) => {
       return
   }
 }
+
+export const SIGNOUT = () => {
+  return firebase.auth().signOut()
+}
