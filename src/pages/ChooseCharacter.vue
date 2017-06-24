@@ -1,3 +1,3 @@
 <template>
-    <div>Choose Charecter</div>
+    <div class="text-center">กำลังพัฒนา...</div>
 </template>

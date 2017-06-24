@@ -1,3 +1,3 @@
 <template>
-    <div>Choose Map</div>
+    <div class="text-center">กำลังพัฒนา...</div>
 </template>

@@ -1,3 +1,3 @@
 <template>
-    <div>Loser</div>
+    <div class="text-center">กำลังพัฒนา...</div>
 </template>

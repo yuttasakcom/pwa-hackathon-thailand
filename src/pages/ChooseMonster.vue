@@ -1,3 +1,3 @@
 <template>
-    <div>Choose Monster</div>
+    <div class="text-center">กำลังพัฒนา...</div>
 </template>

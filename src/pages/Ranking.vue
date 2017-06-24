@@ -1,3 +1,3 @@
 <template>
-    <div>Ranking</div>
+    <div class="text-center">กำลังพัฒนา...</div>
 </template>

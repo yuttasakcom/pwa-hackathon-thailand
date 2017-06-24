@@ -1,3 +1,3 @@
 <template>
-    <div>Fighting</div>
+    <div class="text-center">กำลังพัฒนา...</div>
 </template>
