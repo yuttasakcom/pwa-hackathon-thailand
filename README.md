@@ -23,9 +23,21 @@
 .
 +-- src
     +-- pages
+        +-- Home.vue
+        +-- Signup.vue
+        +-- Signin.vue
+        +-- ChooseCharacter.vue
+        +-- ChooseMap.vue
+        +-- ChooseMonster.vue
+        +-- Fighting.vue
+        +-- Winner.vue
+        +-- Loser.vue
+        +-- ManageItem.vue
+        +-- Ranking.vue
     +-- containers
     +-- components
     +-- services
+        +-- firebase.json /* .gitignore */
     +-- stores
     +-- router
     ... เพิ่มทีหลัง
