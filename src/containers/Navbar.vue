@@ -2,16 +2,16 @@
   <div class="container">
     <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-sm">
 
-      <h1 class="navbar-brand text-center text-md-left text-primary" @click="goHome">PWA TURN BASED</h1>
+      <h1 class="navbar-brand text-center text-md-left text-primary ml-3" @click="goHome">PWA TURN BASED</h1>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <div>
-          <router-link to="/signin" tag="button" class="btn btn-outline-warning pull-right">Sign In</router-link>
-          <router-link to="/signup" tag="button" class="btn btn-outline-success pull-right">Sign Up</router-link>
+          <router-link to="/signin" tag="button" class="btn btn-outline-warning pull-lg-right">Sign In</router-link>
+          <router-link to="/signup" tag="button" class="btn btn-outline-success pull-lg-right">Sign Up</router-link>
         </div>
       </div>
 
-      <div class="navbar-toggler navbar-toggler-right mt-1" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="navbar-toggler navbar-toggler-left mt-1" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="fa fa-bars text-primary"></span>
     </div>
     </nav>
