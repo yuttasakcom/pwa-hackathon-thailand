@@ -54,7 +54,7 @@
       submited () {
         firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(res => {
           res.getIdToken().then(token => {
-            console.log(token)
+            this.$cookie.set('access_token', token, {expires: 7})
           })
 
           let user = {
