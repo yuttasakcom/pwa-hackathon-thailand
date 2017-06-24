@@ -30,7 +30,10 @@
     }),
     created () {
       firebase.auth().onAuthStateChanged(user => {
-        this.currentUser = user
+        if (user) {
+          this.currentUser = user
+        }
+        return
       })
     },
     methods: {

@@ -37,15 +37,22 @@
 
 <script>
   import { SIGNIN } from '@/services/Auth'
+  import firebase from 'firebase'
   export default {
+    beforeRouteEnter (to, from, next) {
+      const unsubscribe = firebase.auth().onAuthStateChanged(user => {
+        unsubscribe()
+        if (user) {
+          next('/choose/character')
+          return
+        }
+        next()
+      })
+    },
     methods: {
       signIn (btnProvider) {
         SIGNIN(btnProvider).then(res => {
-          let user = {
-            email: res.email
-          }
-          this.$store.dispatch('setUser', user)
-          this.$router.replace('/choose/character')
+          this.$router.push('/choose/character')
         })
       }
     }
