@@ -53,7 +53,10 @@
     methods: {
       submited () {
         firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(res => {
-          console.log(res)
+          let user = {
+            email: res.email
+          }
+          this.$store.dispatch('setUser', user)
           this.$router.replace('/choose/character')
         }).catch(e => {
           this.loginStatus = true

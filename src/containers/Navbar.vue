@@ -5,11 +5,11 @@
       <h1 class="navbar-brand text-center text-md-left text-primary ml-3" @click="goHome">PWA TURN BASED</h1>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-        <div>
+        <div v-if="getUser === null">
           <router-link to="/signup" tag="button" class="btn btn-outline-success pull-lg-right" active-class="active">Sign Up</router-link>
           <router-link to="/signin" tag="button" class="btn btn-outline-warning pull-lg-right" active-class="active">Sign In</router-link>
         </div>
-        <div>
+        <div v-else>
           <button class="btn btn-outline-danger pull-lg-right" @click="signOut">Sign Out</button>
         </div>
       </div>
@@ -25,9 +25,6 @@
   import { mapGetters } from 'vuex'
   import { SIGNOUT } from '@/services/Auth'
   export default {
-    created () {
-      console.log(this.getUser)
-    },
     computed: {
       ...mapGetters([
         'getUser'
@@ -39,6 +36,7 @@
       },
       signOut () {
         SIGNOUT().then(res => {
+          this.$store.dispatch('setUser', null)
           this.$router.push('/')
         })
       }
