@@ -48,7 +48,7 @@
 #### สร้าง containers สำหรับ group component ไว้ใช้งาน
 - [x] Navbar
 - [ ] Login
-- [ ] Footer
+- [x] Footer
 
 #### สร้าง components
 - [ ] LoginButton
