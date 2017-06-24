@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import firebase from 'firebase'
 import store from './stores'
+import VueCookie from 'vue-cookie'
 
 import 'tether/dist/js/tether.min.js'
 import 'jquery/dist/jquery.min.js'
@@ -17,6 +18,8 @@ import configFirebase from '@/services/firebase.json'
 firebase.initializeApp(configFirebase)
 
 Vue.config.productionTip = false
+
+Vue.use(VueCookie)
 
 /* eslint-disable no-new */
 new Vue({
