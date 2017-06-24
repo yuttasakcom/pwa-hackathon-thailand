@@ -59,9 +59,8 @@
 
 #### สร้าง containers สำหรับ group component ไว้ใช้งาน
 - [x] Navbar
-- [ ] Login
-- [x] Footer
 - [x] Signin
+- [x] Footer
 
 #### สร้าง components
 - [x] SigninButton
@@ -72,4 +71,4 @@
 - [x] Auth service
 
 #### สร้าง stores
-- [ ] User
+- [x] User
