@@ -1,6 +1,7 @@
 <template>
   <div>
     <SigninButton :login="github"></SigninButton>
+    <SigninButton :login="twitter"></SigninButton>
     <SigninButton :login="facebook"></SigninButton>
     <SigninButton :login="google"></SigninButton>
   </div>
@@ -19,6 +20,12 @@
           btnMsg: 'Sign in with Github',
           btnIcon: 'fa fa-github',
           btnProvider: 'github'
+        },
+        twitter: {
+          btnType: 'info',
+          btnMsg: 'Sign in with Twitter',
+          btnIcon: 'fa fa-twitter',
+          btnProvider: 'twitter'
         },
         facebook: {
           btnType: 'primary',

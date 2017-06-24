@@ -28,7 +28,7 @@
           </div>
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-lg btn-outline-warning btn-block">Sign In</button>
+          <button type="submit" class="btn btn-lg btn-outline-warning active btn-block">Sign In</button>
         </div>
       </form>
 
