@@ -46,7 +46,7 @@
 ### Check list
 #### สร้าง pages & routing
 - [x] Home
-- [ ] Signup
+- [x] Signup
 - [x] Signin
 - [ ] ChooseCharacter
 - [ ] ChooseMap
@@ -73,5 +73,3 @@
 
 #### สร้าง stores
 - [ ] User
-
-... เพิ่มทีทำไม่ทัน T_T
