@@ -52,7 +52,7 @@
     methods: {
       signIn (btnProvider) {
         SIGNIN(btnProvider).then(res => {
-          this.$router.push('/choose/character')
+          this.$router.replace('/choose/character')
         })
       }
     }

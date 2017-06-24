@@ -41,9 +41,12 @@
         this.$router.push('/')
       },
       signOut () {
+        this.$store.dispatch('setCss', {
+          bg: "background: url('/static/img/background/bg.jpg') center center / cover no-repeat fixed;"
+        })
         SIGNOUT().then(res => {
           this.currentUser = null
-          this.$router.push('/')
+          this.$router.replace('/')
         })
       }
     }
