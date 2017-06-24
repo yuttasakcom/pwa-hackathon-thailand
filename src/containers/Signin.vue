@@ -10,7 +10,7 @@
   import SigninButton from '@/components/SigninButton'
   export default {
     components: {
-      ButtonLogin
+      SigninButton
     },
     data () {
       return {
