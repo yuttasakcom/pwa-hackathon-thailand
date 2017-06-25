@@ -18,7 +18,15 @@ textarea {
 .pb-lg-6 {
   padding-bottom: 12rem !important; }
 .pt-lg-30 {
-  padding-top: 35rem !important; }
+  padding-top: 17rem !important; }
+}
+@media (min-width: 577px) and (max-width: 991px) {
+.pt-md-30 {
+  padding-top: 17rem !important; }
+}
+@media (max-width: 576px) {
+.pt-sm-30 {
+  padding-top: 17rem !important; }
 }
 .btn-outline-success {
     color: #fff;
