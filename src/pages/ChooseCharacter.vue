@@ -1,17 +1,6 @@
 <template>
-  <div class="container">
-    <div class="pt-lg-30 pt-md-30 pt-sm-30 text-center">
-      <h3 style="color:black">กำลังพัฒนา</h3>
-      <button class="btn btn-primary" @click="selectMap">เลือกแผนที่</button>
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-          <Sprite :character="characters.player1"></Sprite>
-        </div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-          <Sprite :character="characters.player2"></Sprite>
-        </div>
-      </div>
-    </div>
+  <div class="container text-center">
+    กำลังพัฒนา...
   </div>
 </template>
 
