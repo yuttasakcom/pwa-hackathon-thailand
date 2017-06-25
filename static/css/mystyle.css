@@ -12,6 +12,13 @@ textarea {
   line-height: 1.15;
   margin: 0;
 }
+#app {
+  background: url("/static/img/background/bg.jpg") no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
 @media (min-width: 992px) {
 .pt-lg-6 {
   padding-top: 6rem !important; }

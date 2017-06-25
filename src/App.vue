@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :style="this.getCss.bg">
+  <div id="app">
     <container-navbar></container-navbar>
     <router-view></router-view>
     <container-footer></container-footer>
